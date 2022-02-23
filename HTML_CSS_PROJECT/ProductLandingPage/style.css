@@ -1,0 +1,65 @@
+body{
+    color:#1e306e;
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+
+header{
+    background-image:url("casper.jpg");
+    background-color:plum;
+    text-align:center;
+    pading:5px;
+    height:450px;
+}
+.logo{
+    padding:5px;
+    width:150px;
+    height:40px;
+    display:block;
+    /*
+    aliniere logo la mijloc
+     */
+    margin-left:auto;
+    margin-right:auto;
+}
+p.top-line{
+    font-size:15px;
+}
+
+header a.main-button{
+    margin-top:80px;
+    padding:15px;
+    border: 0.25rem;
+    background-color:brown;
+    color:white;
+    display:inline-block;
+
+}
+
+header p.footer-text{
+    padding-top:150px;
+    display:block;
+
+
+}
+
+.testimonials{
+    text-align:center;
+
+}
+.reviews{
+    /*
+    inline-block pt a aranja impreuna boxurile
+     */
+    display:inline-block;
+    width:350px;
+    height:250px;
+}
+footer{
+    background-color:black;
+    color:white;
+    clear:both;
+    padding:15px;
+}
