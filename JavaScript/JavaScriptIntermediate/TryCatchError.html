@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Try Catch Error</title>
+    <script>
+        //finally se executa indiferent daca avem sau nu erori
+        try{
+
+            var input1=prompt("Some nr");
+            if(input1=="") throw "NO VALUE MENTIONED"
+            alert("input is corect");
+        }catch(error){
+
+            alert(error);
+        }finally{
+
+            alert("have a good day");
+        }
+        //Ce se afiseaza?
+        //fereastra de introdus nr - daca e corect apare mesaj de nr corect + ce e pe clauza de finally
+                                 //  -daca nr e gresit apare un mesaj de avertizare + mesajul de pe clauza finally
+    </script>
+</head>
+<body>
+
+</body>
+</html>

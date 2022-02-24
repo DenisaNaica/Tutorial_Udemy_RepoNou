@@ -1,0 +1,1 @@
+alert("hello from Script Js File");

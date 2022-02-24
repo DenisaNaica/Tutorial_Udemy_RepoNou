@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Calculator</title>
+    <script>
+        function operatiiAdunare(){
+            var nr1=document.getElementById("nr1").value;
+            var nr2=document.getElementById("nr2").value;
+
+            var nr1_int=parseInt(nr1);
+            var nr2_int=parseInt(nr2);
+            var rez=nr1_int +nr2_int;
+            document.getElementById("rez").innerHTML="Result: " + rez;
+
+        }
+        function operatiiScadere(){
+            var nr1=document.getElementById("nr1").value;
+            var nr2=document.getElementById("nr2").value;
+
+            var nr1_int=parseInt(nr1);
+            var nr2_int=parseInt(nr2);
+            var rez=nr1_int - nr2_int;
+            document.getElementById("rez").innerHTML="Result: " + rez;
+
+        }
+
+        function operatiiInmultire(){
+            var nr1=document.getElementById("nr1").value;
+            var nr2=document.getElementById("nr2").value;
+
+            var nr1_int=parseInt(nr1);
+            var nr2_int=parseInt(nr2);
+            var rez=nr1_int * nr2_int;
+            document.getElementById("rez").innerHTML="Result: " + rez;
+
+        }
+
+        function clearAll(){
+
+            var rez="";
+            document.getElementById("rez").innerHTML=rez;
+
+        }
+
+    </script>
+</head>
+<body>
+
+</body>
+    <p id="rez"></p>
+    <h1>Mini calculator</h1>
+    <form method="get">
+        <label for="nr1">Numabrul 1</label>
+        <input id="nr1" type="number" name="nr1"/>
+        <br><br>
+
+        <label for="nr2">Numabrul 2</label>
+        <input id="nr2" type="number" name="nr2"/>
+        <br><br>
+
+        <input type="reset" value="Clear op" onclick="clearAll();"/>
+        <input type="button" id="adunare" name="add" value="Add" onclick="operatiiAdunare();"/>
+        <input type="button" id="scadere" name="sub" value="Sub" onclick="operatiiScadere();"/>
+        <input type="button" id="inmultire" name="mul" value="Mul" onclick="operatiiInmultire();"/>
+
+
+    </form>
+</html>
