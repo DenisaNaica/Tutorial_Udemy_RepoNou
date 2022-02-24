@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects</title>
+    <script>
+
+        function Area(a,b){
+            this.input1=a;
+            this.input2=b;
+
+            this.getArea=function(){
+                return this.input1 * this.input2;
+            }
+        }
+        var input1=prompt("Enter first value");
+        var input2=prompt("Enter second value");
+        var result=0;
+        input1=parseInt(input1);
+        input2=parseInt(input2);
+
+        var a1=new Area(input1, input2);
+        result=a1.getArea();
+
+        console.log("Area: " + result);
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
