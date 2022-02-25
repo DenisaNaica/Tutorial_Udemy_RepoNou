@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Class Selectors CSS">
+    <title> Class Selectors CSS</title>
+    <style type="text/css">
+
+        .red-border{
+            border-style: solid;
+            border-color:red;
+        }
+
+        .green-border{
+            border-style:solid;
+            border-color:green;
+
+        }
+
+
+        .text-italic{
+            font-style:italic;
+        }
+        /*
+        se aplica clasa green-border doar selectorului h1
+         */
+        h1.green-border{
+            border-width:150px;
+        }
+    </style>
+</head>
+<body>
+<h1 class="red-border text-italic">Heading</h1>
+<p class="green-border text-italic">Paragraph</p>
+
+</body>
+</html>
