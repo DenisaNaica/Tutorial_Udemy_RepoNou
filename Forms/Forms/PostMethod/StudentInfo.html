@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Info</title>
+</head>
+<body>
+<h1>FORM-POST</h1>
+<!-- cand dam submit se intra pe pagina display.php-->
+<form action="display.php" method="post">
+    <fieldset>
+        <legend>Student Form</legend>
+        <p>
+            <!-- pt a pune ce e in form in url trebuie sa folosim name="..."-->
+            <!-- astfel prin intermediul name se transmite info in url -->
+            <label for="test">Test</label>
+            <input id="test" name="test" type="text" placeholder="Test">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input id="email" type="email" name="email" placeholder="Enter your email">
+        </p>
+    </fieldset>
+    <p>
+        <input type="submit" name="Submit">
+        <input type="reset" name="Reset">
+
+    </p>
+
+
+</form>
+</body>
+</html>
